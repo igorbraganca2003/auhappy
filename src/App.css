@@ -1,38 +1,89 @@
+@font-face {
+  font-family:'Poppins-Black';
+  src: url('../public/fonts/Poppins-Black.ttf');
+}
+
+@font-face {
+  font-family:'Poppins-ExtraBold';
+  src: url('../public/fonts/Poppins-ExtraBold.ttf');
+}
+
+@font-face {
+  font-family:'Poppins-Bold';
+  src: url('../public/fonts/Poppins-Bold.ttf');
+}
+
+@font-face {
+  font-family:'Poppins-SemiBold';
+  src: url('../public/fonts/Poppins-SemiBold.ttf');
+}
+
+@font-face {
+  font-family:'Poppins-Medium';
+  src: url('../public/fonts/Poppins-Medium.ttf');
+}
+
+@font-face {
+  font-family:'Poppins-Regular';
+  src: url('../public/fonts/Poppins-Regular.ttf');
+}
+
+@font-face {
+  font-family:'Poppins-Italic';
+  src: url('../public/fonts/Poppins-Italic.ttf');
+}
+
+@font-face {
+  font-family:'Poppins-Italic';
+  src: url('../public/fonts/Poppins-Italic.ttf');
+}
+
+@font-face {
+  font-family:'Poppins-Light';
+  src: url('../public/fonts/Poppins-Light.ttf');
+}
+
+@font-face {
+  font-family:'Poppins-Thin';
+  src: url('../public/fonts/Poppins-Thin.ttf');
+}
+
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body{
+  margin: 0;
+  padding: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* Botão ellipse */
+.ellipse {
+  text-align: center;
   color: white;
+  font-family:'Poppins-SemiBold';
+  font-size: 1.2vw;
+  width: 220px;
+  height: 250px;
+  background-color: black;
+  clip-path: ellipse(50% 15% at 50% 50%);
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media screen and (prefers-color-scheme: dark) {
+  .ellipse {
+    text-align: center;
+    color: black;
+    font-family:'Poppins-SemiBold';
+    font-size: 1.2vw;
+    width: 220px;
+    height: 250px;
+    background-color: white;
+    clip-path: ellipse(50% 15% at 50% 50%);
   }
 }
