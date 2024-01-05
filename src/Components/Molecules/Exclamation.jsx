@@ -6,11 +6,11 @@ const Exclamation = ({ isDarkMode }) => {
   return (
     <div className="flex w-[15%] h-[100%] items-center">
       <img
-        className="w-[20%]"
+        className="w-[20%] desktop:inline mobile:hidden"
         src={isDarkMode ? purple_exclamation : green_excalamation}
         alt="Exclamation"
       />
-      <p className="w-[100%] font-poppins text-left ml-[-8%] text-[1vw] text-black dark:text-white">
+      <p className="w-[100%] text-black dark:text-white font-poppins text-left ml-[-8%] desktop:text-[1vw] mobile:text-[1.6vw] mobile:w-[80%] mobile:font-semibold">
         Nossos planos cobrem Vacinas, exames e mais!
       </p>
     </div>

@@ -1,6 +1,3 @@
-// Imagens botão "entre em contato!"
-import arrow from '../Midia/arrow.png'
-import arc from '../Midia/arc.png'
 import React, { useState } from 'react'
 
 export default function Button() {
@@ -16,11 +13,9 @@ export default function Button() {
 // Botão Nossos Serviços
 export function EllipsisButton() {
     return (
-        // <button className="ellipse">
-        //     Nossos Serviços
-        // </button>
-
-        <p className='font-poppins text-[1vw] font-semibold text-white bg-black dark:bg-white rounded-[50%] p-8 dark:text-DarkBackground '>Nossos Serviços</p>
+        <button className="ellipse">
+            Nossos Serviços
+        </button>
     )
 }
 
@@ -28,10 +23,9 @@ export function EllipsisButton() {
 //Botão Entre em contato ->
 export function GetInContactButton() {
     return (
-        <button className='px-[10%]'>
-            <p className="font-black text-[1vw] w-4/5 text-center items-center flex-row text-black dark:text-white ">Entre em contato!
-                {/* <img src={arc} className='w-[80%] mx-auto' /> */}
-                <hr className='border-2 border-black rounded-full w-[80%] mx-auto my-2' />
+        <button className='desktop:px-[10%] mobile:px-[4%]'>
+            <p className="font-black desktop:text-[1.2vw] mobile:text-[1.5vw] desktop:w-4/5 mobile:w-[120%] text-center items-center flex-row text-black dark:text-white ">Entre em contato!
+                <hr className='desktop:border-2 mobile:border border-black rounded-full desktop:w-[80%] mobile:w-[] mx-auto mt-[10%] dark:border-white' />
             </p>
         </button>
     )
@@ -54,14 +48,12 @@ const SwitcherButton = () => {
                     name='autoSaver'
                     className='sr-only'
                     checked={isChecked}
-                    onChange={handleCheckboxChange}
-                />
+                    onChange={handleCheckboxChange} />
                 <span
-                    className={`slider mr-3 flex h-[26px] w-[50px] items-center rounded-full p-1 shadow-[0_3px_15px_rgb(0,0,0,0.20)] duration-200 ${isChecked ? 'bg-white dark:bg-purple' : 'bg-purple dark:bg-white'
-                        }`}
-                >
+                    className={`slider flex desktop:h-[26px] desktop:w-[50px] mobile:h-[20px] mobile:w-[40px] items-center rounded-full p-1 shadow-[0_3px_15px_rgb(0,0,0,0.20)] duration-200 ${isChecked ? 'bg-white dark:bg-purple' : 'bg-purple dark:bg-white'
+                        }`}>
                     <span
-                        className={`dot h-[100%] w-[40%] rounded-full bg-white duration-200 ${isChecked ? 'translate-x-6 bg-[#4F4993] dark:bg-white' : 'bg-white dark:bg-DarkBackground'
+                        className={`dot desktop:h-[100%] desktop:w-[40%] mobile:h-[100%] mobile:w-[40%] rounded-full bg-purple duration-200 ${isChecked ? 'desktop:translate-x-6 mobile:translate-x-5 bg-[#4F4993] dark:bg-white' : 'bg-white dark:bg-DarkBackground'
                             }`}
                     ></span>
                 </span>
@@ -78,7 +70,7 @@ export function CardButton({ isPrincipal }) {
     return (
         <button
             className={`${isPrincipal ? 'bg-purple dark:bg-white text-white dark:text-purple' : 'bg-white dark:bg-purple text-purple dark:text-white'
-                } font-poppins text-[1.2vw] font-semibold w-[80%] py-[5%] rounded-lg`}>
+                } font-poppins desktop:text-[1.2vw] mobile:text-[2vw] font-semibold desktop:w-[80%] mobile:w-[83%] py-[5%] desktop:rounded-[0.5vw] mobile:rounded-[1vw]`}>
             Escolher Plano
         </button>
     );
@@ -89,18 +81,8 @@ export function CardButton({ isPrincipal }) {
 export function formButton() {
     return (
         <button
-            className='bg-white dark:bg-white text-purple dark:text-purple font-poppins text-[1.2vw] font-semibold w-[90%] py-[4%] rounded-lg'>
+            className='bg-white dark:bg-white text-purple dark:text-purple font-poppins desktop:text-[1.2vw] mobile:text-[4vw] font-semibold w-[90%] py-[4%] desktop:rounded-[0.5vw] mobile:rounded-[1vw]'>
             Enviar
         </button>
     );
 }
-
-
-// // Botão do formulário
-// export function formButton() {
-//     return (
-//         <button className='bg-black dark:bg-white text-white dark:text-purple font-poppins text-[1.2vw] font-semibold w-[80%] py-[5%] rounded-lg'>
-//             Enviar
-//         </button>
-//     );
-// }

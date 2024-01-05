@@ -1,50 +1,50 @@
 @font-face {
-  font-family:'Poppins-Black';
+  font-family: 'Poppins-Black';
   src: url('../public/fonts/Poppins-Black.ttf');
 }
 
 @font-face {
-  font-family:'Poppins-ExtraBold';
+  font-family: 'Poppins-ExtraBold';
   src: url('../public/fonts/Poppins-ExtraBold.ttf');
 }
 
 @font-face {
-  font-family:'Poppins-Bold';
+  font-family: 'Poppins-Bold';
   src: url('../public/fonts/Poppins-Bold.ttf');
 }
 
 @font-face {
-  font-family:'Poppins-SemiBold';
+  font-family: 'Poppins-SemiBold';
   src: url('../public/fonts/Poppins-SemiBold.ttf');
 }
 
 @font-face {
-  font-family:'Poppins-Medium';
+  font-family: 'Poppins-Medium';
   src: url('../public/fonts/Poppins-Medium.ttf');
 }
 
 @font-face {
-  font-family:'Poppins-Regular';
+  font-family: 'Poppins-Regular';
   src: url('../public/fonts/Poppins-Regular.ttf');
 }
 
 @font-face {
-  font-family:'Poppins-Italic';
+  font-family: 'Poppins-Italic';
   src: url('../public/fonts/Poppins-Italic.ttf');
 }
 
 @font-face {
-  font-family:'Poppins-Italic';
+  font-family: 'Poppins-Italic';
   src: url('../public/fonts/Poppins-Italic.ttf');
 }
 
 @font-face {
-  font-family:'Poppins-Light';
+  font-family: 'Poppins-Light';
   src: url('../public/fonts/Poppins-Light.ttf');
 }
 
 @font-face {
-  font-family:'Poppins-Thin';
+  font-family: 'Poppins-Thin';
   src: url('../public/fonts/Poppins-Thin.ttf');
 }
 
@@ -53,37 +53,41 @@
   text-align: center;
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
 }
 
-body{
+body {
   margin: 0;
   padding: 0;
 }
+
 
 /* Botão ellipse */
 .ellipse {
   text-align: center;
   color: white;
-  font-family:'Poppins-SemiBold';
+  font-family: 'Poppins-SemiBold';
   font-size: 1.2vw;
-  width: 220px;
-  height: 250px;
+  padding: 1vw 3vw;
   background-color: black;
-  clip-path: ellipse(50% 15% at 50% 50%);
+  border-radius: 50%;
+  display: inline-block;
+}
+
+
+@media (max-width: 1024px) {
+  .ellipse {
+    font-size: 1.5vw;
+    padding: 1vw 4vw;
+  }
+
 }
 
 @media screen and (prefers-color-scheme: dark) {
   .ellipse {
-    text-align: center;
     color: black;
-    font-family:'Poppins-SemiBold';
-    font-size: 1.2vw;
-    width: 220px;
-    height: 250px;
     background-color: white;
-    clip-path: ellipse(50% 15% at 50% 50%);
   }
 }

@@ -6,6 +6,7 @@ import Plans from './Components/Organisms/Plans'
 import OutTeams from './Components/Organisms/OurTeam';
 import GetInContact from './Components/Organisms/GetInContact';
 import Coments from './Components/Organisms/Coments';
+import Footer from './Components/Organisms/Footer';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <OutTeams/>
       <GetInContact/>
       <Coments/>
+      <Footer/>
     </div>
   );
 }
